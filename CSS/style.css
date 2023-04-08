@@ -1,0 +1,169 @@
+
+:root{
+    --submit:  hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --back: #272f3a;
+    --Dark-Blue: #1e252f;
+    --Very-Dark-Blue: #141519;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: "Overpass";
+    background: var(--Very-Dark-Blue);
+}
+#container{
+    width: 400px;
+    height: 350px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: var(--Dark-Blue);
+}
+.all{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+img{
+    margin-bottom: 20px;
+    border-radius: 100%;
+    font-weight: 400;
+    padding: 10px;
+    background-color: var(--back);
+    cursor: pointer;
+    
+}
+h1{
+    color: var(--White);
+    font-size: 1.9em;
+}
+p{
+    color: var(--Medium-Grey);
+    margin-top: 10px;
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+.select {
+    width: 100%;
+    height: 70px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.btn{
+    color: var(--Light-Grey);
+    padding: 13px 20px;
+    font-weight: 700;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--back);
+    cursor: pointer;   
+    transition: all .3s ease-in-out;
+}
+.btn:hover{
+    background-color: var(--submit);
+    color: var(--White);
+    
+}
+
+#sub{
+    width: 90%;
+    height: 40px;
+    color: var(--White);
+    background-color: var(--submit);
+    margin: 15px 17px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    filter: drop-shadow( 1px 3px 2px rgba(0, 0, 0, 0.466));
+    transition: all .3s ease-in-out;
+   
+}
+.btn:focus{
+    background-color: rgba(255, 255, 255, 0.458);
+    color: white;
+}
+
+#sub:hover{
+    background-color: var(--White);
+    color: var(--submit);
+}
+
+/*Thank you*/
+
+.tks{
+    width: 400px;
+    height: 370px;
+    border-radius: 20px;
+    background-color: var(--Dark-Blue);
+   
+}
+.block{
+    display: none;
+}
+.tks img{
+    margin: 15px 100px;
+    border-radius: 0;
+    background-color: transparent;
+    transition: all .3s ease-in-out;
+    
+}
+.tks img:hover{
+    margin: 15px 100px;
+    border-radius: 0;
+    background-color: transparent;
+    filter: drop-shadow(5px 4px 5px rgba(255, 255, 255, 0.738));
+}
+img + p{
+    width: 180px;
+    height: 30px;
+    margin: 0px 100px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--submit);
+    background-color:var(--back);
+    border-radius: 20px;
+    
+}
+h2{
+    color: var(--White);
+    margin: 10px 135px;
+    padding: auto;
+   
+}
+
+h2 + p {
+    text-align: center;
+    margin-left: 15px;
+    width: 92%;
+}
+footer{
+    margin-top: 15px;
+    text-align: center;
+}
+footer a{
+    color: var(--submit);
+    text-decoration: none;
+    transition: all .2s ease-out;
+
+}
+footer a:hover{
+    color: white;
+}
